@@ -1,0 +1,2 @@
+
+const faqHeader = document.querySelector

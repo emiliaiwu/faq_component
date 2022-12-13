@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ASCENT-COLOR: #FF4C14;
+    --COLOR: #000000;
+}
+
+
+
+body {
+    color: var(--COLOR);
+    font-family: 'Roboto', sans-serif;
+    max-width: 100vw;
+    min-height: 100vw;
+    margin: 0 auto;
+}
+
+.main {
+    width: 100%;
+   padding: 4vw 7%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.faq__component {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+}
+
+.faq_content {
+   
+    padding: 0 40px;
+    border-bottom: 1px solid #d2d2d2;
+    
+}
+
+.faq_content.active {
+    box-shadow: 0px 25px 18px 0px rgba(166,158,158,0.35);
+    -webkit-box-shadow: 1px 25px 18px 0px rgba(166,158,158,0.35);
+
+}
+
+.hidden {
+    display: none;
+}
+
+.faq_container {
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    width: 100%;
+    padding: 0 5rem;
+}
+
+.faq_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    
+    
+    transition: all .3s ease;
+}
+
+.faq_header:hover {
+    color: var(--ASCENT-COLOR);
+}
+
+.faq_header.open {
+    color: var(--ASCENT-COLOR);
+
+}
+
+.fa-solid {
+    font-size: 1.5rem;
+    transition: transform .45s cubic-bezier(.3,.4,.2,1),border-color .15s ease;
+}
+
+.content {
+    font-size: 1.1rem;
+    padding: 1rem 1rem 2rem 0;
+
+}
+
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: inherit;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-family: inherit;
+    padding: 30px 70px 30px 0px;
+
+}
+
+
+
+.faq_image {
+    w
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+img {
+   
+}
+
+
+
+
+@media only screen and (max-width: 995px) {
+    .faq__component {
+        flex-direction: column;
+    }
+}

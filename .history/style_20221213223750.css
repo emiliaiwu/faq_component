@@ -52,7 +52,7 @@ p {
 
 /* IMAGE */
 .faq_image {
-    width: 90%;
+    width: 100%;
 }
 
 img {
@@ -205,9 +205,5 @@ img {
     .faq_content.active .content_wrap {
         max-height: 300px;
         padding: 0 0 30px;
-    }
-
-    .faq_image {
-        width: 100%;
     }
 }
